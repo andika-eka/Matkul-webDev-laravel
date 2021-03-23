@@ -247,12 +247,12 @@
                     <div class="max-w-full lg:max-w-3xl xl:max-w-5xl">
 
                         <!--Graph Card-->
-                        <div class="border-b p-3">
+                        <!-- <div class="border-b p-3">
                             <h5 class="font-bold text-black">Graph</h5>
                         </div>
                         <div class="p-5">
                             <div class="ct-chart ct-golden-section" id="chart1"></div>
-                        </div>
+                        </div> -->
                         <!--/Graph Card-->
 
                         <!--Table Card-->
@@ -290,6 +290,7 @@
                                 </table>
 
                                 <p class="py-2"><a href="#">See More issues...</a></p>
+                                {{ $slot }}
 
                             </div>
                         </div>
@@ -337,14 +338,14 @@
                         <!--/Graph Card-->
 
                         <!--Template Card-->
-                        <div class="p-3">
+                        <!-- <div class="p-3">
                             <div class="border-b p-3">
                                 <h5 class="font-bold text-black">Template</h5>
                             </div>
                             <div class="p-5">
 
                             </div>
-                        </div>
+                        </div> -->
                         <!--/Template Card-->
 
                     </div>
@@ -356,6 +357,7 @@
         </div>
 
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <script>
@@ -529,6 +531,9 @@
         }
 
     </script>
+    @stack('modals')
+
+@livewireScripts
 </body>
 
 </html>
