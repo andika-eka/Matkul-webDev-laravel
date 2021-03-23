@@ -33,9 +33,7 @@
 .content {
     background-color: white;
     color: black;
-    width: 80%;
-    float: right;
-
+   
 }
 
 
@@ -61,7 +59,6 @@
 
 .sidebar {
     background-color: gray;
-    width: 20%;
     position: fixed;
     left: 0;
 
